@@ -1,0 +1,20 @@
+{
+  "name": "ff-joe's",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && npx @tailwindcss/cli -i ./src/global.css -o ./src/output.css",
+    "dev": "npx @tailwindcss/cli -i ./src/global.css -o ./src/input.css"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
