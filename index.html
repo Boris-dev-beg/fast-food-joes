@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joe's Food</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/main.js"></script>
+    <!-- ? Icônes Flaticon Uicons (CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+  </head>
+  <body class="max-w-screen min-h-screen w-full h-full flex flex-col">
+    <!-- ! -- HEADER -- -->
+    <header
+      class="bg-bg-dark text-text-light flex items-center justify-between py-2 px-4 w-full"
+    >
+      <!-- ! LOGO -->
+      <div
+        class="flex w-fit flex-col py-2 px-5 items-center font-script rounded-full border-3 border-dashed border-brand-orange"
+      >
+        <h2 class="text-sm font-semibold">Fast-Food</h2>
+        <h1 class="text-2xl font-black">JOE'S</h1>
+      </div>
+      <!-- ! NAVBAR -->
+      <!-- ! RESPONSIVE NAVBAR -->
+      <aside
+      id="responsive-menu"
+        class="fixed top-0 left-0 h-screen  md:hidden flex-col px-4 py-2 bg-bg-dark/98 w-[95vw] -translate-x-full transition-transform duration-300"
+      >
+        <div
+          class="flex w-fit flex-col py-2 px-5 items-center font-script rounded-full border-3 border-dashed border-brand-orange"
+        >
+          <h2 class="text-sm font-semibold">Fast-Food</h2>
+          <h1 class="text-2xl font-black">JOE'S</h1>
+        </div>
+        <button
+        id="btn-close"
+          class="absolute top-5 right-5 bg-slate-900 hover:bg-slate-50/10 pt-3 px-3.5 pb-1.5 rounded-2xl text-2xl"
+        >
+          <i class="fi fi-rr-cross"></i>
+        </button>
+        <nav
+          class="*:capitalize *:hover:text-brand-orange *:[&.active]:text-brand-orange *:[&.active]:border-b *:py-3 *:px-5 *:w-1/2 *:rounded-md *:[&.active]:text-center *:[&.active]:font-semibold flex flex-col py-8 px-4"
+        >
+          <a href="#" class="active">Accueil</a>
+          <a href="#">Menu</a>
+          <a href="#">Gallerie</a>
+          <a href="#">à Propos</a>
+          <a href="#">Contact</a>
+        </nav>
+      </aside>
+      <!-- ! BUTTON RESPONSIVE NAVBAR -->
+      <button id="btn-open" class="hover:bg-slate-50/10 p-3 pb-1.5 rounded-2xl text-3xl">
+        <i class="fi fi-rr-menu-burger"></i>
+      </button>
+    </header>
+    <!-- ! -- HEADER -- -->
+  </body>
+</html>

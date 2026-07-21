@@ -1,0 +1,132 @@
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../../assets/font/PlayfairDisplay.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DancingScript";
+  src: url("../../assets/font/DancingScript.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  /* ! --- COULEURS DE LA MARQUE --- */
+
+  /* ? Orange principal (Boutons, Prix, Soulignements, Icônes) */
+  --color-brand-orange: #e85d04;
+  --color-brand-orange-hover: #dc2f02;
+
+  /* ? Jaune/Or (Texte en surbrillance dans le Hero, Étoiles d'avis) */
+  --color-brand-yellow: #ffba08;
+
+  /* ? Vert WhatsApp (Bouton de commande spécifique) */
+  --color-brand-green: #25d366;
+  --color-brand-green-hover: #1ebe5d;
+
+  /* ! --- COULEURS DE FOND --- */
+
+  /* ? Mode sombre (Header, Footer, Section Hero) */
+  --color-bg-dark: #111111;
+  --color-bg-dark-card: #1c1c1c; /* ? Pour les cartes sur fond noir */
+
+  /* ? Mode clair (Sections À propos, Menu, Avis) */
+  --color-bg-cream: #f8f7f3; /* ? Un blanc légèrement cassé/crème */
+  --color-bg-white: #ffffff;
+
+  /* ! --- COULEURS DE TEXTE --- */
+  --color-text-dark: #1f2937; /* ? Texte principal sur fond clair */
+  --color-text-light: #f9fafb; /* ? Texte principal sur fond sombre */
+  --color-text-muted: #6b7280; /* ? Texte secondaire (descriptions) */
+
+  /* ! --- TYPOGRAPHIE --- */
+
+  /* ? Titres percutants et majuscules */
+  --font-heading: "Roboto", "Arial", sans-serif;
+
+  /* ? Textes courants (lisibilité) */
+  --font-body: "PlayfairDisplay", ui-sans-serif, system-ui, sans-serif;
+
+  /* ? Textes décoratifs / manuscrits */
+  --font-script: "DancingScript", cursive;
+}
+@layer components {
+  /* ! BOUTONS */
+  .btn-primary {
+    @apply bg-brand-orange hover:bg-brand-orange-hover text-white font-body font-semibold py-3 px-8 rounded-md transition-colors duration-200 inline-flex items-center gap-2;
+  }
+  .btn-secondary {
+    @apply bg-brand-green hover:bg-brand-green-hover text-white font-body font-semibold py-3 px-6 rounded-full transition-colors duration-200 inline-flex items-center gap-2 shadow-lg;
+  }
+  .btn-outline {
+    @apply border-2 border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white font-body font-medium py-2 px-6 rounded-full transition-colors duration-200;
+  }
+
+  /* ! TITRES */
+  .big-title {
+    @apply font-heading text-brand-yellow text-5xl md:text-7xl font-bold uppercase leading-tight;
+  }
+  .title-section {
+    @apply font-heading text-text-dark text-3xl md:text-4xl font-bold uppercase text-center tracking-wide;
+  }
+  .hand-writting-title {
+    @apply font-script text-brand-orange text-2xl md:text-3xl transform -rotate-2;
+  }
+  .price {
+    @apply font-heading text-brand-orange text-xl font-bold;
+  }
+
+  /* ! CARTES */
+  .special-card {
+    @apply bg-bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col;
+  }
+  .menu-card {
+    @apply bg-bg-dark-card rounded-xl p-4 flex gap-4 border border-gray-800 hover:border-brand-orange transition-colors;
+  }
+  .card {
+    @apply rounded-md relative flex flex-col gap-4 shadow hover:shadow-sm transition-all duration-300 overflow-hidden;
+  }
+  .card-container {
+    @apply flex flex-col gap-2 relative p-3 w-full;
+  }
+  .card-image {
+    @apply object-cover w-full h-48 group-hover:scale-105;
+  }
+  .card-title {
+    @apply text-2xl uppercase font-bold;
+  }
+  .card-description {
+    @apply text-sm;
+  }
+  .card-price {
+    @apply flex gap-3 p-3;
+  }
+  .card-icon {
+    @apply absolute -top-3/4 left-3 rounded-full text-white bg-brand-orange p-2 border border-white;
+  }
+
+  /* ! SECTIONs */
+  .section-dark {
+    @apply bg-bg-dark text-text-light py-16;
+  }
+  .section-light {
+    @apply bg-bg-cream text-text-dark py-16;
+  }
+  .info-banner {
+    @apply bg-bg-dark-card rounded-xl p-4 flex gap-4 border border-gray-800 hover:border-brand-orange transition-colors;
+  }
+  .section-header {
+    @apply flex items-center justify-center gap-4 mb-10;
+  }
+  .section-header-separator {
+    @apply h-0.5 w-12 bg-brand-orange;
+  }
+  .section-header-title {
+    @apply font-heading text-text-dark text-3xl font-bold uppercase;
+  }
+}
