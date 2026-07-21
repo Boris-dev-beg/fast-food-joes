@@ -9,17 +9,17 @@
     <!-- ? Icônes Flaticon Uicons (CDN) -->
     <link
       rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
   </head>
   <body class="max-w-screen min-h-screen w-full h-full flex flex-col font-body">
     <!-- ! -- HEADER -- -->
     <header
-      class="bg-bg-dark/70 backdrop-blur-md text-text-light py-2 px-4 w-full sticky top-0 inset-x-0"
+      class="bg-bg-dark/90 backdrop-blur-md text-text-light py-2 px-4 w-full sticky top-0 inset-x-0 z-30"
     >
       <div class="section-container flex items-center justify-between">
         <!-- ! LOGO -->
@@ -85,7 +85,68 @@
     </header>
     <!-- ! -- HEADER -- -->
     <!-- ! -- MAIN -- -->
-    <main class="flex-1 min-h-full"></main>
+    <main class="flex-1 min-h-full">
+      <!-- ! HERO Section -->
+      <section class="relative w-full h-screen md:max-h-[85vh] bg-bg-dark/30 py-6">
+        <!-- ? Image -->
+        <div class="absolute inset-0 w-full h-full -z-10">
+          <img
+            src="./assets/images/hero_banner_1.jpg"
+            alt="hero banner"
+          class="w-full h-full object-cover opacity-90"
+          />
+          <div
+            class="absolute bg-linear-to-tl to-bg-dark/80 from-transparent inset-0"
+          ></div>
+        </div>
+        <!-- ? Container -->
+        <div class="section-container flex flex-col gap-4 h-full">
+          <h1 class="big-title text-white max-w-4xl">
+            DES BURGERS
+            <b class="text-brand-yellow">GÉNÉREUX PRÉPARÉS A LA COMMANDE</b>
+          </h1>
+          <p class="text-white text-lg max-w-xs md:max-w-xl">
+            Ingrédients frais, recettes savoureuses et services rapide.
+          </p>
+
+          <div class="mt-auto md:mt-10 flex flex-col w-full gap-4 md:max-w-xl">
+            <div
+              class="flex gap-4 items-center justify-between sm:justify-start sm:gap-8 w-full text-white"
+            >
+              <span class="flex flex-col sm:flex-row sm:gap-3 items-center font-bold justify-center">
+                <i class="fi fi-rr-moped text-4xl text-brand-yellow"></i>
+                <h2 class="uppercase">livraison</h2>
+              </span>
+              <span class="flex flex-col sm:flex-row sm:gap-4 items-center font-bold justify-center">
+                <i class="fi fi-rr-store-alt text-4xl text-brand-yellow"></i>
+                <h2 class="uppercase">sur place</h2>
+              </span>
+              <span class="flex flex-col sm:flex-row sm:gap-4 items-center font-bold justify-center">
+                <i class="fi fi-rr-shopping-bag text-4xl text-brand-yellow"></i>
+                <h2 class="uppercase">à emporter</h2>
+              </span>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+              <a
+                href="https://wa.me/698902641?text=Bonjour"
+                class="btn-secondary rounded-lg flex w-full"
+              >
+                <i class="fi fi-brands-whatsapp text-2xl"></i>
+                Commander par WhatsApp
+              </a>
+              <a
+                href="#menu"
+                class="btn-outline rounded-lg flex items-center justify-between gap-2 w-full"
+              >
+                voir le menu
+                <i class="fi fi-rr-arrow-small-down text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ! HERO Section -->
+    </main>
     <!-- ! -- MAIN -- -->
     <!-- ! -- FOOTER -- -->
     <footer class="bg-bg-dark text-text-light">
