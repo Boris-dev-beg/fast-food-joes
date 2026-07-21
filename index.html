@@ -11,52 +11,170 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+    />
   </head>
-  <body class="max-w-screen min-h-screen w-full h-full flex flex-col">
+  <body class="max-w-screen min-h-screen w-full h-full flex flex-col font-body">
     <!-- ! -- HEADER -- -->
     <header
-      class="bg-bg-dark text-text-light flex items-center justify-between py-2 px-4 w-full"
+      class="bg-bg-dark/70 backdrop-blur-md text-text-light py-2 px-4 w-full sticky top-0 inset-x-0"
     >
-      <!-- ! LOGO -->
-      <div
-        class="flex w-fit flex-col py-2 px-5 items-center font-script rounded-full border-3 border-dashed border-brand-orange"
-      >
-        <h2 class="text-sm font-semibold">Fast-Food</h2>
-        <h1 class="text-2xl font-black">JOE'S</h1>
-      </div>
-      <!-- ! NAVBAR -->
-      <!-- ! RESPONSIVE NAVBAR -->
-      <aside
-      id="responsive-menu"
-        class="fixed top-0 left-0 h-screen  md:hidden flex-col px-4 py-2 bg-bg-dark/98 w-[95vw] -translate-x-full transition-transform duration-300"
-      >
+      <div class="section-container flex items-center justify-between">
+        <!-- ! LOGO -->
         <div
           class="flex w-fit flex-col py-2 px-5 items-center font-script rounded-full border-3 border-dashed border-brand-orange"
         >
           <h2 class="text-sm font-semibold">Fast-Food</h2>
           <h1 class="text-2xl font-black">JOE'S</h1>
         </div>
-        <button
-        id="btn-close"
-          class="absolute top-5 right-5 bg-slate-900 hover:bg-slate-50/10 pt-3 px-3.5 pb-1.5 rounded-2xl text-2xl"
-        >
-          <i class="fi fi-rr-cross"></i>
-        </button>
+        <!-- ! NAVBAR -->
         <nav
-          class="*:capitalize *:hover:text-brand-orange *:[&.active]:text-brand-orange *:[&.active]:border-b *:py-3 *:px-5 *:w-1/2 *:rounded-md *:[&.active]:text-center *:[&.active]:font-semibold flex flex-col py-8 px-4"
+          class="*:capitalize *:hover:text-brand-orange *:[&.active]:text-brand-orange *:[&.active]:border-b *:py-3 *:px-5 *:rounded-md *:[&.active]:text-center *:[&.active]:font-semibold *:transition-all md:flex px-4 w-fit hidden"
         >
-          <a href="#" class="active">Accueil</a>
-          <a href="#">Menu</a>
-          <a href="#">Gallerie</a>
-          <a href="#">à Propos</a>
-          <a href="#">Contact</a>
+          <a href="#hero" class="active">Accueil</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallerie</a>
+          <a href="#about">à Propos</a>
+          <a href="#contact">Contact</a>
         </nav>
-      </aside>
-      <!-- ! BUTTON RESPONSIVE NAVBAR -->
-      <button id="btn-open" class="hover:bg-slate-50/10 p-3 pb-1.5 rounded-2xl text-3xl">
-        <i class="fi fi-rr-menu-burger"></i>
-      </button>
+        <!-- ! CTA WhatsApp -->
+        <a
+          href="https://wa.me/698902641?text=Bonjour"
+          class="btn-secondary hidden lg:flex"
+        >
+          <i class="fi fi-brands-whatsapp text-2xl"></i>
+          Commander par WhatsApp
+        </a>
+        <!-- ! RESPONSIVE NAVBAR -->
+        <aside
+          id="responsive-menu"
+          class="fixed top-0 left-0 h-screen md:hidden flex-col px-4 py-2 bg-bg-dark/98 w-[95vw] -translate-x-full transition-transform duration-300"
+        >
+          <div
+            class="flex w-fit flex-col py-2 px-5 items-center font-script rounded-full border-3 border-dashed border-brand-orange"
+          >
+            <h2 class="text-sm font-semibold">Fast-Food</h2>
+            <h1 class="text-2xl font-black">JOE'S</h1>
+          </div>
+          <button
+            id="btn-close"
+            class="absolute top-5 right-5 bg-slate-900 hover:bg-slate-50/10 pt-3 px-3.5 pb-1.5 rounded-2xl text-2xl"
+          >
+            <i class="fi fi-rr-cross"></i>
+          </button>
+          <nav
+            class="*:capitalize *:hover:text-brand-orange *:[&.active]:text-brand-orange *:[&.active]:border-b *:py-3 *:px-5 *:w-1/2 *:rounded-md *:[&.active]:text-center *:[&.active]:font-semibold *:transition-all flex flex-col py-8 px-4"
+          >
+            <a href="#hero" class="active">Accueil</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallerie</a>
+            <a href="#about">à Propos</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </aside>
+        <!-- ! BUTTON RESPONSIVE NAVBAR -->
+        <button
+          id="btn-open"
+          class="hover:bg-slate-50/10 p-3 pb-1.5 rounded-2xl text-3xl md:hidden"
+        >
+          <i class="fi fi-rr-menu-burger"></i>
+        </button>
+      </div>
     </header>
     <!-- ! -- HEADER -- -->
+    <!-- ! -- MAIN -- -->
+    <main class="flex-1 min-h-full"></main>
+    <!-- ! -- MAIN -- -->
+    <!-- ! -- FOOTER -- -->
+    <footer class="bg-bg-dark text-text-light">
+      <div class="section-container">
+        <!-- ! Top -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 w-full lg:place-items-center py-4 gap-5"
+        >
+          <!-- ? LOGO -->
+          <div class="flex flex-col gap-2 items-start h-full">
+            <div
+              class="flex w-fit flex-col py-2 px-5 items-center font-script rounded-full border-3 border-dashed border-brand-orange"
+            >
+              <h2 class="text-sm font-semibold">Fast-Food</h2>
+              <h1 class="text-2xl font-black">JOE'S</h1>
+            </div>
+            <p class="text-sm max-w-2xs">
+              Des Burgers généreux, des ingrédients frais et un service de
+              qualité.
+            </p>
+          </div>
+          <!-- ? QUICK LINKs -->
+          <div class="flex flex-col gap-2 items-start h-full">
+            <h2 class="text-xl font-bold uppercase">Lien rapides</h2>
+            <nav
+              class="*:capitalize *:hover:text-brand-orange *:[&.active]:text-brand-orange *:[&.active]:border-b *:py-1 *:px-3 md:*:w-full *:w-1/2 *:rounded-md *:[&.active]:font-semibold *:transition-all flex flex-col gap-1 w-full"
+            >
+              <a href="#hero" class="active">Accueil</a>
+              <a href="#menu">Menu</a>
+              <a href="#gallery">Gallerie</a>
+              <a href="#about">à Propos</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </div>
+          <!-- ? SERVICEs -->
+          <div class="flex flex-col gap-2 items-start h-full">
+            <h2 class="text-xl font-bold uppercase">Services</h2>
+            <nav
+              class="*:capitalize *:hover:text-brand-orange *:[&.active]:text-brand-orange *:[&.active]:border-b *:py-1 *:px-3 *:rounded-md *:[&.active]:font-semibold *:transition-all flex flex-col gap-1 w-full *:w-1/2 md:*:w-full"
+            >
+              <a href="#livraison">Livraison</a>
+              <a href="#emporter">a emporter</a>
+              <a href="#surplace">Sur place</a>
+              <a href="#catering">Catering</a>
+            </nav>
+          </div>
+          <!-- ? CONTACTs-->
+          <div class="flex flex-col gap-2 items-start h-full">
+            <h2 class="text-xl font-bold uppercase">Contact</h2>
+            <div class="flex flex-col gap-1">
+              <span class="flex gap-2 items-center">
+                <i class="fi fi-rr-phone-flip text-brand-orange text-2xl"></i>
+                6 12 34 56 78
+              </span>
+              <span class="flex gap-2 items-center">
+                <i class="fi fi-rr-envelope text-brand-orange text-2xl"></i>
+                fastfoodjoes@gmail.com
+              </span>
+            </div>
+            <span class="flex gap-4">
+              <a href="#" class="hover:text-brand-orange">
+                <i class="fi fi-brands-facebook text-2xl"></i>
+              </a>
+              <a href="#" class="hover:text-brand-orange">
+                <i class="fi fi-brands-instagram text-2xl"></i>
+              </a>
+              <a href="#" class="hover:text-brand-orange">
+                <i class="fi fi-brands-whatsapp text-2xl"></i>
+              </a>
+            </span>
+          </div>
+          <!-- ? SCHEDULEs -->
+          <div class="flex flex-col gap-2 items-start h-full">
+            <h2 class="text-xl font-bold uppercase">Horaires</h2>
+            <div class="flex flex-col gap-1">
+              <h3>Lun - Sam: 11h - 23h</h3>
+              <h3>Dimanche: 12h - 22h</h3>
+            </div>
+            <h3>Ouvert tous les jours</h3>
+          </div>
+        </div>
+        <!-- ! Footer -->
+        <div class="w-full py-3 border-t border-gray-400">
+          <p class="text-sm text-text-muted text-center">
+            &copy; 2026 Fast-food Joe's. Tous droits réservées.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ! -- FOOTER -- -->
   </body>
 </html>
