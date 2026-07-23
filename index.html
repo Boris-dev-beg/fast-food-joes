@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth scroll-pt-16">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,9 @@
       href="https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
   </head>
-  <body class="max-w-screen min-h-screen w-full h-full flex flex-col font-body">
+  <body
+    class="max-w-screen min-h-screen bg-bg-dark w-full h-full flex flex-col font-body"
+  >
     <!-- ! -- HEADER -- -->
     <header
       class="bg-bg-dark/90 backdrop-blur-md text-text-light py-2 px-4 w-full sticky top-0 inset-x-0 z-30"
@@ -87,13 +89,13 @@
     <!-- ! -- MAIN -- -->
     <main class="flex-1 min-h-full">
       <!-- ! HERO Section -->
-      <section class="relative w-full h-screen md:max-h-[85vh] bg-bg-dark/30 py-6">
+      <section id="hero" class="relative w-full min-h-screen bg-bg-dark/30 py-6">
         <!-- ? Image -->
         <div class="absolute inset-0 w-full h-full -z-10">
           <img
             src="./assets/images/hero_banner_1.jpg"
             alt="hero banner"
-          class="w-full h-full object-cover opacity-90"
+            class="w-full h-full object-cover opacity-90"
           />
           <div
             class="absolute bg-linear-to-tl to-bg-dark/80 from-transparent inset-0"
@@ -109,24 +111,32 @@
             Ingrédients frais, recettes savoureuses et services rapide.
           </p>
 
-          <div class="mt-auto md:mt-10 flex flex-col w-full gap-4 md:max-w-xl">
+          <div class="mt-auto md:mt-4 flex flex-col w-full gap-4 md:max-w-xl">
             <div
               class="flex gap-4 items-center justify-between sm:justify-start sm:gap-8 w-full text-white"
             >
-              <span class="flex flex-col sm:flex-row sm:gap-3 items-center font-bold justify-center">
+              <span
+                class="flex flex-col sm:flex-row sm:gap-3 items-center font-bold justify-center"
+              >
                 <i class="fi fi-rr-moped text-4xl text-brand-yellow"></i>
                 <h2 class="uppercase">livraison</h2>
               </span>
-              <span class="flex flex-col sm:flex-row sm:gap-4 items-center font-bold justify-center">
+              <span
+                class="flex flex-col sm:flex-row sm:gap-4 items-center font-bold justify-center"
+              >
                 <i class="fi fi-rr-store-alt text-4xl text-brand-yellow"></i>
                 <h2 class="uppercase">sur place</h2>
               </span>
-              <span class="flex flex-col sm:flex-row sm:gap-4 items-center font-bold justify-center">
+              <span
+                class="flex flex-col sm:flex-row sm:gap-4 items-center font-bold justify-center"
+              >
                 <i class="fi fi-rr-shopping-bag text-4xl text-brand-yellow"></i>
                 <h2 class="uppercase">à emporter</h2>
               </span>
             </div>
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-4"
+            >
               <a
                 href="https://wa.me/698902641?text=Bonjour"
                 class="btn-secondary rounded-lg flex w-full"
@@ -143,9 +153,184 @@
               </a>
             </div>
           </div>
+
+          <div
+            class="mt-auto z-20 grid grid-cols-2 lg:grid-cols-4 w-full gap-4 p-4 rounded-md shadow bg-bg-white place-items-center *:border-r *:border-text-muted *:px-5 lg:*:px-1 lg:*:gap-3"
+          >
+            <span
+              class="flex items-center justify-start lg:justify-center gap-2 w-full"
+            >
+              <i class="fi fi-rr-hamburger text-brand-yellow text-4xl"></i>
+              <span class="flex flex-col">
+                <h3 class="font-bold text-2xl">+3000</h3>
+                <p class="text-text-muted text-base">Burgers servis</p>
+              </span>
+            </span>
+            <span
+              class="flex items-center justify-start lg:justify-center gap-2 w-full max-lg:border-none"
+            >
+              <i class="fi fi-rr-star text-brand-yellow text-4xl"></i>
+              <span class="flex flex-col">
+                <h3 class="font-bold text-2xl">4.3/5</h3>
+                <p class="text-text-muted text-base">Note Google</p>
+              </span>
+            </span>
+            <span
+              class="flex items-center justify-start lg:justify-center gap-2 w-full"
+            >
+              <i class="fi fi-rr-clock-three text-brand-yellow text-4xl"></i>
+              <span class="flex flex-col">
+                <h3 class="font-bold text-2xl">
+                  10 <b class="text-base font-semibold">min</b>
+                </h3>
+                <p class="text-text-muted text-base">Préparation</p>
+              </span>
+            </span>
+            <span
+              class="flex items-center justify-start lg:justify-center gap-2 w-full border-none"
+            >
+              <i class="fi fi-rr-calendar text-brand-yellow text-4xl"></i>
+              <span class="flex flex-col">
+                <h3 class="font-bold text-2xl">7j/7</h3>
+                <p class="text-text-muted text-base">Ouvert tous les jours</p>
+              </span>
+            </span>
+          </div>
         </div>
       </section>
       <!-- ! HERO Section -->
+      <!-- ! ABOUT Section -->
+      <section id="about" class="section-light">
+        <div class="section-container flex flex-col gap-4 lg:flex-row">
+          <div class="flex flex-col w-full max-w-2xl">
+            <h3
+              class="uppercase font-script text-brand-orange font-bold text-lg"
+            >
+              à propos
+            </h3>
+            <h1 class="big-title text-4xl md:text-5xl text-black font-black">
+              bienvenue chez joe's
+            </h1>
+            <div class="flex flex-col gap-3 py-4">
+              <p>
+                Chez Joe's, nous mettons un point d'honneur a offrir des burgers
+                généreux préparés avec des ingrédients frais de qualité.
+              </p>
+              <p>
+                Notre mission: régaler chaque client avec des recettes uniques
+                dans une ambiance conviviale.
+              </p>
+            </div>
+            <a href="#" class="btn-outline mr-auto mt-4 hidden lg:flex">
+              En savoir plus sur nous
+            </a>
+          </div>
+          <div class="relative w-full rounded-3xl overflow-hidden">
+            <img
+              src="./assets/images/about_img_1.jpg"
+              alt="image About"
+              class="object-cover w-full h-100"
+            />
+          </div>
+          <a href="#" class="btn-outline mx-auto lg:hidden">
+            En savoir plus sur nous
+          </a>
+        </div>
+      </section>
+      <!-- ! ABOUT Section -->
+      <!-- ! PRODUCTs Section -->
+      <section id="product" class="section-light pt-0">
+        <div class="section-container flex flex-col gap-2">
+          <div class="section-header mx-auto">
+            <div class="section-header-separator"></div>
+            <h2 class="section-header-title">nos spécialités</h2>
+            <div class="section-header-separator"></div>
+          </div>
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <article class="card">
+              <div class="h-full">
+                <img
+                src="./assets/images/products/burger_1.jpg"
+                alt="Burgers"
+                class="card-image"
+              />
+              </div>
+              <div class="card-info">
+                <span class="card-icon"> <i class="fi fi-rr-burger-alt"></i> </span>
+                <h2 class="card-title">Burgers</h2>
+                <p class="card-description">
+                  Burgers gourmands préparés à la commande.
+                </p>
+                <a href="#" class="card-link">
+                  Découvrir
+                  <i class="fi fi-rr-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="h-full">
+                <img
+                src="./assets/images/products/grillarde_1.jpg"
+                alt="Grillardes"
+                class="card-image"
+              />
+              </div>
+              <div class="card-info">
+                <span class="card-icon"> <i class="fi fi-rr-flame"></i> </span>
+                <h2 class="card-title">Grillardes</h2>
+                <p class="card-description">
+                  Viandes grillés à la perfection.
+                </p>
+                <a href="#" class="card-link">
+                  Découvrir
+                  <i class="fi fi-rr-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="h-full relative">
+                <img
+                src="./assets/images/products/boisson_2.jpg"
+                alt="Boissons"
+                class="card-image"
+              />
+              </div>
+              <div class="card-info">
+                <span class="card-icon"> <i class="fi fi-rr-water-bottle"></i> </span>
+                <h2 class="card-title">Boissons</h2>
+                <p class="card-description">
+                  Boissons fraiches et rafraichissantes.
+                </p>
+                <a href="#" class="card-link">
+                  Découvrir
+                  <i class="fi fi-rr-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="h-full relative">
+                <img
+                src="./assets/images/products/frite_4.jpg"
+                alt="Snacks"
+                class="card-image"
+              />
+              </div>
+              <div class="card-info">
+                <span class="card-icon"> <i class="fi fi-rr-flatbread-stuffed"></i> </span>
+                <h2 class="card-title">Snacks</h2>
+                <p class="card-description">
+                  Frites croustillantes et snacks variés.
+                </p>
+                <a href="#" class="card-link">
+                  Découvrir
+                  <i class="fi fi-rr-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ! PRODUCTs Section -->
     </main>
     <!-- ! -- MAIN -- -->
     <!-- ! -- FOOTER -- -->
