@@ -81,12 +81,31 @@
   }
 
   /* ! CARTES */
-  .menu-card {
-    @apply bg-bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col;
-  }
   .special-card {
-    @apply bg-bg-dark-card rounded-xl p-4 flex gap-4 border border-gray-800 hover:border-brand-orange transition-colors;
+    @apply bg-bg-white/40 p-4 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border-2 border-gray-100 flex flex-col relative md:mx-auto w-full h-70 lg:h-80 lg:w-2/3;
   }
+  .menu-card {
+    @apply bg-bg-dark-card rounded-xl p-4 flex items-center justify-between gap-4 border border-gray-800 hover:border-brand-orange transition-colors;
+  }
+  .menu-card-image{
+    @apply rounded-2xl h-37 w-65 overflow-hidden 
+  }
+  .menu-card-image img{
+    @apply group-hover:rotate-6 group-hover:scale-105 transition-transform duration-300
+  }
+  .menu-card-price{
+    @apply text-brand-orange text-3xl text-nowrap font-black my-auto
+  }
+  .menu-card-text{
+    @apply flex flex-col gap-1 w-full h-auto
+  }
+  .menu-card-text-title{
+    @apply text-2xl lg:text-3xl font-black line-clamp-2
+  }
+  .menu-card-text-p{
+    @apply text-base line-clamp-2 
+  }
+
   .card {
     @apply rounded-lg relative flex flex-col gap-3 shadow hover:shadow-md transition-all duration-300 overflow-hidden;
   }
@@ -130,5 +149,9 @@
   }
   .section-container {
     @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-filter {
+    @apply rounded-md py-2 px-3 lg:px-4 text-white inline-flex bg-bg-dark-card shadow [&.active]:bg-brand-orange hover:bg-brand-orange transition-colors duration-300 hover:font-semibold [&.active]:font-semibold;
   }
 }
