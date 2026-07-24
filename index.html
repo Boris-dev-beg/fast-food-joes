@@ -70,7 +70,7 @@
           </div>
           <button
             id="btn-close"
-            class="absolute top-5 right-5 bg-slate-900 hover:bg-slate-50/10 pt-3 px-3.5 pb-1.5 rounded-2xl text-2xl"
+            class="absolute top-5 right-5 bg-slate-900 hover:bg-slate-50/10 pt-3 px-3.5 pb-1.5 rounded-2xl text-xl"
           >
             <i class="fi fi-rr-cross"></i>
           </button>
@@ -83,11 +83,19 @@
             <a href="#about">à Propos</a>
             <a href="#contact">Contact</a>
           </nav>
+          <!-- ! CTA Whatsapp -->
+          <a
+            href="https://wa.me/698902641?text=Bonjour"
+            class="btn-secondary rounded-md w-fit"
+          >
+            <i class="fi fi-brands-whatsapp text-2xl"></i>
+            Commadner via WhatsApp
+          </a>
         </aside>
         <!-- ! BUTTON RESPONSIVE NAVBAR -->
         <button
           id="btn-open"
-          class="hover:bg-slate-50/10 p-3 pb-1.5 rounded-2xl text-3xl md:hidden"
+          class="hover:bg-slate-50/10 p-3 pb-1.5 rounded-2xl text-2xl md:hidden"
         >
           <i class="fi fi-rr-menu-burger"></i>
         </button>
@@ -95,7 +103,14 @@
     </header>
     <!-- ! -- HEADER -- -->
     <!-- ! -- MAIN -- -->
-    <main class="flex-1 min-h-full">
+    <main class="flex-1 min-h-full relative">
+      <!-- ! CTA Whatsapp -->
+      <a
+        href="https://wa.me/698902641?text=Bonjour"
+        class="btn-secondary w-fit fixed bottom-5 right-5 z-50 rounded-full p-4 pb-2.5 animate-pulse shadow hover:scale-105"
+      >
+        <i class="fi fi-brands-whatsapp text-2xl"></i>
+      </a>
       <!-- ! HERO Section -->
       <section
         id="hero"
@@ -539,11 +554,11 @@
       </section>
       <!-- ! Why Us Section -->
       <!-- ! GALLERY Section -->
-      <section id="gallery" class="section-dark">
+      <section id="gallery" class="section-light">
         <div class="section-container flex flex-col gap-4">
           <div class="section-header">
             <div class="section-header-separator"></div>
-            <h2 class="section-header-title text-white">Gallerie</h2>
+            <h2 class="section-header-title">Gallerie</h2>
             <div class="section-header-separator"></div>
           </div>
           <div class="grid grid-cols-2 lg:grid-cols-4 w-full gap-4">
@@ -599,18 +614,18 @@
               <p class="lg:text-md">Basé sur les avis de Google</p>
             </div>
             <!-- ? Testimonials -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               <div class="testi-card">
                 <span class="testi-stars">
                   <i class="fi fi-ss-star"></i>
                   <i class="fi fi-ss-star"></i>
                   <i class="fi fi-ss-star"></i>
-                  <i class="fi fi-ss-star"></i>
-                  <i class="fi fi-ss-star-sharp-half-stroke"></i>
+                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-rs-star"></i>
                 </span>
-                <p>Trés bon hamburger, service rapide et personnel agréable.</p>
+                <p>J'ai aimé le hamburger.</p>
                 <span class="testi-bottom">
-                  <h3>Marc D.</h3>
+                  <h3>Placide Djou.</h3>
                   <i class="fi fi-brands-google-circle"></i>
                 </span>
               </div>
@@ -619,12 +634,12 @@
                   <i class="fi fi-ss-star"></i>
                   <i class="fi fi-ss-star"></i>
                   <i class="fi fi-ss-star"></i>
-                  <i class="fi fi-ss-star-sharp-half-stroke"></i>
-                  <i class="fi fi-rs-star"></i>
+                  <i class="fi fi-ss-star"></i>
+                  <i class="fi fi-ss-star"></i>
                 </span>
                 <p>Je recommande vivement ! Les burgers sont excellents.</p>
                 <span class="testi-bottom">
-                  <h3>Sophie L.</h3>
+                  <h3>Raphaël Ngoula</h3>
                   <i class="fi fi-brands-google-circle"></i>
                 </span>
               </div>
@@ -636,9 +651,12 @@
                   <i class="fi fi-rs-star"></i>
                   <i class="fi fi-rs-star"></i>
                 </span>
-                <p>Je recommande vivement ! Les burgers sont excellents.</p>
+                <p>
+                  Super sympa et de très bons burgers ! Merci encore pour
+                  l’accueil.
+                </p>
                 <span class="testi-bottom">
-                  <h3>Sophie L.</h3>
+                  <h3>Gabriel Noah</h3>
                   <i class="fi fi-brands-google-circle"></i>
                 </span>
               </div>
@@ -647,6 +665,36 @@
         </div>
       </section>
       <!-- ! TESTIMONIAL Section -->
+      <!-- ! CTA Section -->
+      <section class="section-light text-white py-0"">
+        <div
+          class="section-container flex flex-col rounded-md overflow-hidden relative h-60 lg:w-2/3"
+        >
+          <div class="absolute inset-0 w-full h-full z-0">
+            <div class="bg-linear-to-l to-brand-orange via-brand-orange from-transparent absolute inset-0"></div>
+            <img
+              src="./assets/images/hero_banner_1.jpg"
+              alt="burger"
+              class="object-cover w-full h-full"
+            />
+          </div>
+          <div class="flex flex-col gap-2 h-full py-4 max-w-[70%] z-10">
+            <h2 class="font-black text-[2.4em] leading-10 line-clamp-2">
+              Une envie de burger ?
+            </h2>
+            <p class="line-clamp-2 my-auto font-semibold">Commandez maintenant et régalez-vous !</p>
+            <!-- ! CTA Whatsapp -->
+            <a
+              href="https://wa.me/698902641?text=Bonjour"
+              class="btn-secondary w-fit rounded-lg"
+            >
+              <i class="fi fi-brands-whatsapp text-2xl mt-1"></i>
+              Commander sur WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- ! CTA Section -->
       <!-- ! LOCALISATION Section -->
       <section id="contact" class="section-light">
         <div class="section-container flex flex-col">
@@ -701,7 +749,7 @@
     </main>
     <!-- ! -- MAIN -- -->
     <!-- ! -- FOOTER -- -->
-    <footer class="bg-bg-dark text-text-light">
+    <footer class="section-dark pb-0">
       <div class="section-container">
         <!-- ! Top -->
         <div
@@ -719,6 +767,14 @@
               Des Burgers généreux, des ingrédients frais et un service de
               qualité.
             </p>
+            <!-- ! CTA Whatsapp -->
+            <a
+              href="https://wa.me/698902641?text=Bonjour"
+              class="btn-secondary w-fit"
+            >
+              <i class="fi fi-brands-whatsapp text-2xl"></i>
+              WhatsApp
+            </a>
           </div>
           <!-- ? QUICK LINKs -->
           <div class="flex flex-col gap-2 items-start h-full">

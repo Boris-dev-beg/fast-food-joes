@@ -109,7 +109,7 @@
 
   /* ? SPECIALITE */
   .card {
-    @apply rounded-lg relative flex flex-col gap-3 shadow hover:shadow-md transition-all duration-300 overflow-hidden;
+    @apply rounded-lg relative flex flex-col gap-3 shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden;
   }
   .card-info {
     @apply flex flex-col relative p-2 w-full h-full;
