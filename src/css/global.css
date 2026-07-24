@@ -164,7 +164,7 @@
     @apply font-bold;
   }
   .testi-bottom i {
-    @apply text-xl;
+    @apply text-2xl;
   }
 
   /* ! SECTIONs */
