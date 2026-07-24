@@ -147,6 +147,26 @@
     @apply line-clamp-2;
   }
 
+  /* ? TESTIMONIAL */
+  .testi-card {
+    @apply bg-white rounded-md p-5 shadow-md hover:shadow-lg shadow-slate-300 flex flex-col justify-between gap-1;
+  }
+  .testi-stars {
+    @apply inline-flex gap-2 w-fit text-brand-yellow text-xl;
+  }
+  .testi-card p {
+    @apply line-clamp-2 my-2;
+  }
+  .testi-bottom {
+    @apply w-full flex justify-between;
+  }
+  .testi-bottom h3 {
+    @apply font-bold;
+  }
+  .testi-bottom i {
+    @apply text-xl;
+  }
+
   /* ! SECTIONs */
   .section-dark {
     @apply bg-bg-dark text-text-light py-16;
