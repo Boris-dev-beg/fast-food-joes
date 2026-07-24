@@ -1,6 +1,16 @@
 "use strict";
-window.addEventListener("load", () => {
-    responsive_menu();
+// import AOS from "aos";
+document.addEventListener("DOMContentLoaded", () => {
+    AOS.init({
+        offset: 50,
+        easing: "ease-in-out",
+    });
+    try {
+        responsive_menu();
+    }
+    catch (error) {
+        console.error("Erreur dans responsive_menu :", error);
+    }
 });
 function responsive_menu() {
     const btn_close = document.getElementById("btn-close");
@@ -31,4 +41,3 @@ function responsive_menu() {
         });
     });
 }
-// responsive_menu()

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joe's Food</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/main.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/main.js" type="module"></script>
     <!-- ? Icônes Flaticon Uicons (CDN) -->
     <link
       rel="stylesheet"
@@ -142,18 +144,27 @@
               class="flex gap-4 items-center justify-between sm:justify-start sm:gap-8 w-full text-white"
             >
               <span
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="0"
                 class="flex flex-col sm:flex-row sm:gap-3 items-center font-bold justify-center"
               >
                 <i class="fi fi-rr-moped text-4xl text-brand-yellow"></i>
                 <h2 class="uppercase">livraison</h2>
               </span>
               <span
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="150"
                 class="flex flex-col sm:flex-row sm:gap-4 items-center font-bold justify-center"
               >
                 <i class="fi fi-rr-store-alt text-4xl text-brand-yellow"></i>
                 <h2 class="uppercase">sur place</h2>
               </span>
               <span
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="200"
                 class="flex flex-col sm:flex-row sm:gap-4 items-center font-bold justify-center"
               >
                 <i class="fi fi-rr-shopping-bag text-4xl text-brand-yellow"></i>
@@ -164,6 +175,9 @@
               class="flex flex-col md:flex-row items-center justify-between gap-4"
             >
               <a
+                data-aos="fade-up"
+                data-aos-delay="400"
+                data-aos-duration="1000"
                 href="https://wa.me/698902641?text=Bonjour"
                 class="btn-secondary rounded-lg flex w-full"
               >
@@ -171,6 +185,9 @@
                 Commander par WhatsApp
               </a>
               <a
+                data-aos="fade-up"
+                data-aos-delay="700"
+                data-aos-duration="1000"
                 href="#menu"
                 class="btn-outline rounded-lg flex items-center justify-between gap-2 w-full"
               >
@@ -184,6 +201,9 @@
             class="mt-auto z-20 grid grid-cols-2 lg:grid-cols-4 w-full gap-4 p-4 rounded-md shadow bg-bg-white place-items-center *:border-r *:border-text-muted *:px-5 lg:*:px-1 lg:*:gap-3"
           >
             <span
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="500"
               class="flex items-center justify-start lg:justify-center gap-2 w-full"
             >
               <i class="fi fi-rr-hamburger text-brand-yellow text-4xl"></i>
@@ -193,6 +213,9 @@
               </span>
             </span>
             <span
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="500"
               class="flex items-center justify-start lg:justify-center gap-2 w-full max-lg:border-none"
             >
               <i class="fi fi-rr-star text-brand-yellow text-4xl"></i>
@@ -202,6 +225,9 @@
               </span>
             </span>
             <span
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="500"
               class="flex items-center justify-start lg:justify-center gap-2 w-full"
             >
               <i class="fi fi-rr-clock-three text-brand-yellow text-4xl"></i>
@@ -213,6 +239,9 @@
               </span>
             </span>
             <span
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="500"
               class="flex items-center justify-start lg:justify-center gap-2 w-full border-none"
             >
               <i class="fi fi-rr-calendar text-brand-yellow text-4xl"></i>
@@ -251,7 +280,10 @@
               En savoir plus sur nous
             </a>
           </div>
-          <div class="relative w-full rounded-3xl overflow-hidden">
+          <div
+            data-aos="fade-up"
+            class="relative w-full rounded-3xl overflow-clip"
+          >
             <img
               src="./assets/images/about_img_1.jpg"
               alt="image About"
@@ -275,7 +307,12 @@
             <div class="section-header-separator"></div>
           </div>
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            <article class="card">
+            <article
+              data-aos="slide-up"
+              data-aos-delay="100"
+              data-aos-duration="500"
+              class="card"
+            >
               <div class="h-full">
                 <img
                   src="./assets/images/products/burger_1.jpg"
@@ -297,7 +334,12 @@
                 </a>
               </div>
             </article>
-            <article class="card">
+            <article
+              data-aos="slide-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              class="card"
+            >
               <div class="h-full">
                 <img
                   src="./assets/images/products/grillarde_1.jpg"
@@ -315,7 +357,12 @@
                 </a>
               </div>
             </article>
-            <article class="card">
+            <article
+              data-aos="slide-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              class="card"
+            >
               <div class="h-full relative">
                 <img
                   src="./assets/images/products/boisson_2.jpg"
@@ -337,7 +384,12 @@
                 </a>
               </div>
             </article>
-            <article class="card">
+            <article
+              data-aos="slide-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              class="card"
+            >
               <div class="h-full relative">
                 <img
                   src="./assets/images/products/frite_4.jpg"
@@ -383,7 +435,12 @@
             </div>
             <!-- ! Menu Card -->
             <div class="grid grid-cols-1 md:grid-cols-2 w-full gap-3 py-2">
-              <div class="menu-card group">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="500"
+                class="menu-card group"
+              >
                 <span class="menu-card-image">
                   <img
                     src="./assets/images/products/burger_1.jpg"
@@ -403,7 +460,12 @@
                   <h3 class="menu-card-price">3500 FCFA</h3>
                 </div>
               </div>
-              <div class="menu-card group">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="500"
+                class="menu-card group"
+              >
                 <span class="menu-card-image">
                   <img
                     src="./assets/images/products/burger_1.jpg"
@@ -423,7 +485,12 @@
                   <h3 class="menu-card-price">4500 FCFA</h3>
                 </div>
               </div>
-              <div class="menu-card group">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="500"
+                class="menu-card group"
+              >
                 <span class="menu-card-image">
                   <img
                     src="./assets/images/products/burger_1.jpg"
@@ -443,7 +510,12 @@
                   <h3 class="menu-card-price">3800 FCFA</h3>
                 </div>
               </div>
-              <div class="menu-card group">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="400"
+                data-aos-duration="500"
+                class="menu-card group"
+              >
                 <span class="menu-card-image">
                   <img
                     src="./assets/images/products/burger_1.jpg"
@@ -465,7 +537,12 @@
               </div>
             </div>
             <!-- ! Special Card -->
-            <div class="special-card">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              class="special-card"
+            >
               <div class="absolute inset-0 z-0">
                 <img
                   src="./assets/images/products/burger_3.jpg"
@@ -562,19 +639,39 @@
             <div class="section-header-separator"></div>
           </div>
           <div class="grid grid-cols-2 lg:grid-cols-4 w-full gap-4">
-            <span class="image-container group">
+            <span
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="0"
+              class="image-container group"
+            >
               <img src="./assets/images/products/frite_1.jpg" alt="frite" />
             </span>
-            <span class="image-container group">
+            <span
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="400"
+              class="image-container group"
+            >
               <img src="./assets/images/products/boisson_2.jpg" alt="boisson" />
             </span>
-            <span class="image-container group">
+            <span
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="500"
+              class="image-container group"
+            >
               <img
                 src="./assets/images/products/brochette_1.jpg"
                 alt="brochette"
               />
             </span>
-            <span class="image-container group">
+            <span
+              data-aos="zoom-in"
+              data-aos-delay="150"
+              data-aos-duration="600"
+              class="image-container group"
+            >
               <img
                 src="./assets/images/products/spaghetti_1.jpg"
                 alt="spaghetti"
@@ -666,31 +763,43 @@
       </section>
       <!-- ! TESTIMONIAL Section -->
       <!-- ! CTA Section -->
-      <section class="section-light text-white py-0"">
-        <div
-          class="section-container flex flex-col rounded-md overflow-hidden relative h-60 lg:w-2/3"
-        >
-          <div class="absolute inset-0 w-full h-full z-0">
-            <div class="bg-linear-to-l to-brand-orange via-brand-orange from-transparent absolute inset-0"></div>
-            <img
-              src="./assets/images/hero_banner_1.jpg"
-              alt="burger"
-              class="object-cover w-full h-full"
-            />
-          </div>
-          <div class="flex flex-col gap-2 h-full py-4 max-w-[70%] z-10">
-            <h2 class="font-black text-[2.4em] leading-10 line-clamp-2">
-              Une envie de burger ?
-            </h2>
-            <p class="line-clamp-2 my-auto font-semibold">Commandez maintenant et régalez-vous !</p>
-            <!-- ! CTA Whatsapp -->
-            <a
-              href="https://wa.me/698902641?text=Bonjour"
-              class="btn-secondary w-fit rounded-lg"
+      <section class="section-light py-0 my-0">
+        <div class="section-container">
+          <div
+            class="relative w-full lg:w-2/3 mx-auto min-h-70 rounded-2xl overflow-hidden flex items-center shadow-md hover:shadow-lg transition-shadow duration-300"
+          >
+            <div class="absolute inset-0 w-full h-full z-0 bg-bg-dark">
+              <img
+                src="./assets/images/hero_banner_1.jpg"
+                alt="Burger gourmand"
+                class="object-cover w-full h-full object-right"
+              />
+              <div
+                class="absolute inset-0 bg-linear-to-r from-brand-orange via-brand-orange/90 to-transparent"
+              ></div>
+            </div>
+
+            <div
+              class="relative z-10 p-8 sm:p-10 flex flex-col justify-center gap-3 w-full sm:w-2/3 md:w-3/5 text-text-light"
             >
-              <i class="fi fi-brands-whatsapp text-2xl mt-1"></i>
-              Commander sur WhatsApp
-            </a>
+              <h2
+                class="font-heading font-black text-3xl sm:text-4xl md:text-5xl leading-tight"
+              >
+                Une envie de burger ?
+              </h2>
+
+              <p class="font-body font-medium text-lg text-text-light/90 mb-2">
+                Commandez maintenant et régalez-vous !
+              </p>
+
+              <a
+                href="https://wa.me/698902641?text=Bonjour"
+                class="btn-secondary w-fit"
+              >
+                <i class="fi fi-brands-whatsapp text-2xl"></i>
+                <span>Commander sur WhatsApp</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

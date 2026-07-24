@@ -1,5 +1,18 @@
-window.addEventListener("load", () => {
-  responsive_menu();
+// import AOS from "aos";
+
+declare const AOS: any;
+
+document.addEventListener("DOMContentLoaded", () => {
+  AOS.init({
+    offset: 50,
+    easing: "ease-in-out",
+  });
+
+  try {
+    responsive_menu();
+  } catch (error) {
+    console.error("Erreur dans responsive_menu :", error);
+  }
 });
 
 function responsive_menu() {
