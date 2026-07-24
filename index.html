@@ -246,7 +246,7 @@
         <div class="section-container flex flex-col gap-2">
           <div class="section-header mx-auto">
             <div class="section-header-separator"></div>
-            <h2 class="section-header-title">nos spécialités</h2>
+            <h2 class="section-header-title max-sm:text-wrap">nos spécialités</h2>
             <div class="section-header-separator"></div>
           </div>
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -349,7 +349,7 @@
           <div class="flex flex-col w-full gap-3">
             <!-- ! BTNs Filter -->
             <div
-              class="flex gap-2 mx-auto flex-nowrap justify-between items-center"
+              class="flex gap-2 mx-auto sm:flex-nowrap flex-wrap sm:justify-between items-center"
             >
               <button class="active btn-filter">Burgers</button>
               <button class="btn-filter">Grillardes</button>
@@ -452,17 +452,17 @@
                 ></div>
               </div>
               <div
-                class="flex flex-col items-start justify-between gap-2 py-4 max-w-2/3 z-10 h-full"
+                class="flex flex-col items-start justify-between gap-2 py-4 max-w-2/3 max-sm:w-full z-10 h-full"
               >
-                <h2 class="capitalize font-bold text-4xl">Cheese burger</h2>
-                <p class="">Pain artisanal, steak, fromage, salade</p>
+                <h2 class="capitalize font-bold text-4xl text-nowrap">Cheese burger</h2>
+                <p class="line-clamp-2">Pain artisanal, steak, fromage, salade</p>
 
                 <h1 class="text-brand-orange mt-auto text-4xl font-black">
                   3500 FCFA
                 </h1>
                 <a
                   href="https://wa.me/698902641?text=Bonjour"
-                  class="btn-secondary rounded-lg"
+                  class="btn-secondary rounded-lg w-fit text-nowrap"
                 >
                   <i class="fi fi-brands-whatsapp text-2xl"></i>
                   Commander maintenant
@@ -476,14 +476,14 @@
       <!-- ! Why Us Section -->
       <section id="service" class="section-light">
         <div class="section-container flex flex-col">
-          <div class="section-header ">
+          <div class="section-header">
             <div class="section-header-separator"></div>
-            <h2 class="section-header-title">
-              Pourquoi choisir Joe's
-            </h2>
+            <h2 class="section-header-title">Pourquoi choisir Joe's</h2>
             <div class="section-header-separator"></div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-3">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-3"
+          >
             <div class="service-card">
               <span class="service-card-icon">
                 <i class="fi fi-rr-moped"></i>
@@ -524,6 +524,40 @@
         </div>
       </section>
       <!-- ! Why Us Section -->
+      <!-- ! GALLERY Section -->
+      <section id="gallery" class="section-dark">
+        <div class="section-container flex flex-col gap-4">
+          <div class="section-header">
+            <div class="section-header-separator"></div>
+            <h2 class="section-header-title text-white">Gallerie</h2>
+            <div class="section-header-separator"></div>
+          </div>
+          <div class="grid grid-cols-2 lg:grid-cols-4 w-full gap-4">
+            <span class="image-container group">
+              <img src="./assets/images/products/frite_1.jpg" alt="frite" />
+            </span>
+            <span class="image-container group">
+              <img src="./assets/images/products/boisson_2.jpg" alt="boisson" />
+            </span>
+            <span class="image-container group">
+              <img
+                src="./assets/images/products/brochette_1.jpg"
+                alt="brochette"
+              />
+            </span>
+            <span class="image-container group">
+              <img
+                src="./assets/images/products/spaghetti_1.jpg"
+                alt="spaghetti"
+              />
+            </span>
+          </div>
+          <button class="btn-primary mx-auto mt-4">
+            Voir toute la gallerie
+          </button>
+        </div>
+      </section>
+      <!-- ! GALLERY Section -->
     </main>
     <!-- ! -- MAIN -- -->
     <!-- ! -- FOOTER -- -->

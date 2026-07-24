@@ -88,23 +88,23 @@
   .menu-card {
     @apply bg-bg-dark-card rounded-xl p-4 flex items-center justify-between gap-4 border border-gray-800 hover:border-brand-orange transition-colors;
   }
-  .menu-card-image{
-    @apply rounded-2xl h-37 w-65 overflow-hidden 
+  .menu-card-image {
+    @apply rounded-2xl h-37 w-65 overflow-hidden;
   }
-  .menu-card-image img{
-    @apply group-hover:rotate-6 group-hover:scale-105 transition-transform duration-300
+  .menu-card-image img {
+    @apply group-hover:rotate-6 group-hover:scale-105 transition-transform duration-300;
   }
-  .menu-card-price{
-    @apply text-brand-orange text-3xl text-nowrap font-black my-auto
+  .menu-card-price {
+    @apply text-brand-orange text-3xl text-nowrap font-black my-auto;
   }
-  .menu-card-text{
-    @apply flex flex-col gap-1 w-full h-auto
+  .menu-card-text {
+    @apply flex flex-col gap-1 w-full h-auto;
   }
-  .menu-card-text-title{
-    @apply text-2xl lg:text-3xl font-black line-clamp-2
+  .menu-card-text-title {
+    @apply text-2xl lg:text-3xl font-black line-clamp-2;
   }
-  .menu-card-text-p{
-    @apply text-base line-clamp-2 
+  .menu-card-text-p {
+    @apply text-base line-clamp-2;
   }
 
   /* ? SPECIALITE */
@@ -131,20 +131,20 @@
   }
 
   /* ? SERVICE */
-  .service-card{
-    @apply flex p-3 gap-3 md:border-r border-text-muted [&.last]:border-r-0 items-center 
+  .service-card {
+    @apply flex p-3 gap-3 md:border-r border-text-muted [&.last]:border-r-0 items-center;
   }
-  .service-card-icon{
-    @apply rounded-full px-4.5 pt-4 pb-3 text-4xl text-brand-yellow/90 shadow-[0_0_5px_0px] shadow-brand-yellow
+  .service-card-icon {
+    @apply rounded-full px-4.5 pt-4 pb-3 text-4xl text-brand-yellow/90 shadow-[0_0_5px_0px] shadow-brand-yellow;
   }
-  .service-card-text{
-    @apply flex flex-col w-full gap-1 my-auto
+  .service-card-text {
+    @apply flex flex-col w-full gap-1 my-auto;
   }
-  .service-card-text h1{
-    @apply uppercase font-bold line-clamp-1
+  .service-card-text h1 {
+    @apply uppercase font-bold line-clamp-1;
   }
-  .service-card-text p{
-    @apply line-clamp-2
+  .service-card-text p {
+    @apply line-clamp-2;
   }
 
   /* ! SECTIONs */
@@ -164,13 +164,20 @@
     @apply h-0.5 w-10 md:w-13 bg-brand-orange;
   }
   .section-header-title {
-    @apply font-heading text-text-dark text-3xl text-nowrap font-bold uppercase;
+    @apply font-heading text-text-dark text-3xl sm:text-nowrap font-bold uppercase text-center;
   }
   .section-container {
     @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
   }
 
+  /* ! OTHERs */
   .btn-filter {
     @apply rounded-md py-2 px-3 lg:px-4 text-white inline-flex bg-bg-dark-card shadow [&.active]:bg-brand-orange hover:bg-brand-orange transition-colors duration-300 hover:font-semibold [&.active]:font-semibold;
+  }
+  .image-container {
+    @apply relative rounded-lg overflow-hidden w-full h-50 hover:border-2 hover:border-brand-orange;
+  }
+  .image-container img {
+    @apply object-cover w-full h-full group-hover:scale-105 group-hover:rotate-6 transition-transform duration-200;
   }
 }
