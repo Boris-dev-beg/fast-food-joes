@@ -1,0 +1,133 @@
+{
+  "products": [
+    {
+      "name": "Cheese Burger",
+      "category": "Burgers",
+      "description": "Steak de bœuf grillé, cheddar fondant, laitue fraîche, tomates et sauce maison.",
+      "price": 3500,
+      "imageUrl": "/cheese_burger.jpg"
+    },
+    {
+      "name": "Double Cheese Burger",
+      "category": "Burgers",
+      "description": "Deux steaks de bœuf, double cheddar, oignons caramélisés et sauce burger.",
+      "price": 4500,
+      "imageUrl": "/double_cheese_burger.jpg"
+    },
+    {
+      "name": "Chicken Burger",
+      "category": "Burgers",
+      "description": "Filet de poulet croustillant, salade, tomates fraîches et mayonnaise.",
+      "price": 3800,
+      "imageUrl": "/chicken_burger.jpg"
+    },
+    {
+      "name": "Burger Royal",
+      "category": "Burgers",
+      "description": "Double steak, cheddar, œuf, bacon de bœuf, légumes frais et sauce spéciale.",
+      "price": 5000,
+      "imageUrl": "/burger_royal.jpg"
+    },
+    
+    {
+      "name": "Poulet Braisé (1/2)",
+      "category": "Grillades",
+      "description": "Demi_poulet braisé aux épices camerounaises, servi bien chaud.",
+      "price": 4500,
+      "imageUrl": "/poulet_braise.jpg"
+    },
+    {
+      "name": "Poulet Braisé Entier",
+      "category": "Grillades",
+      "description": "Poulet entier braisé, tendre et savoureux, idéal à partager.",
+      "price": 8500,
+      "imageUrl": "/poulet_entier.jpg"
+    },
+    {
+      "name": "Brochettes de Bœuf",
+      "category": "Grillades",
+      "description": "Brochettes de bœuf marinées et grillées au feu de bois.",
+      "price": 2500,
+      "imageUrl": "/brochettes_boeuf.jpg"
+    },
+    {
+      "name": "Ailes de Poulet Grillées",
+      "category": "Grillades",
+      "description": "Ailes de poulet marinées avec une sauce légèrement épicée.",
+      "price": 3500,
+      "imageUrl": "/ailes_poulet.jpg"
+    },
+
+    {
+      "name": "Frites Classiques",
+      "category": "Accompagnements",
+      "description": "Pommes de terre fraîches coupées maison et croustillantes.",
+      "price": 1000,
+      "imageUrl": "/frites.jpg"
+    },
+    {
+      "name": "Frites + Saucisse",
+      "category": "Accompagnements",
+      "description": "Portion de frites accompagnée d'une saucisse grillée.",
+      "price": 2500,
+      "imageUrl": "/frites_saucisse.jpg"
+    },
+    {
+      "name": "Plantains Frits",
+      "category": "Accompagnements",
+      "description": "Bananes plantains mûres, dorées et croustillantes.",
+      "price": 1500,
+      "imageUrl": "/plantains.jpg"
+    },
+    {
+      "name": "Salade Fraîche",
+      "category": "Accompagnements",
+      "description": "Mélange de laitue, tomates, concombres et vinaigrette maison.",
+      "price": 1500,
+      "imageUrl": "/salade.jpg"
+    },
+
+    {
+      "name": "Coca_Cola 50cl",
+      "category": "Boissons",
+      "description": "Boisson gazeuse rafraîchissante servie bien fraîche.",
+      "price": 700,
+      "imageUrl": "/coca.jpg"
+    },
+    {
+      "name": "Fanta Orange 50cl",
+      "category": "Boissons",
+      "description": "Boisson pétillante au goût d'orange.",
+      "price": 700,
+      "imageUrl": "/fanta.jpg"
+    },
+    {
+      "name": "Sprite 50cl",
+      "category": "Boissons",
+      "description": "Boisson citronnée légère et rafraîchissante.",
+      "price": 700,
+      "imageUrl": "/sprite.jpg"
+    },
+    {
+      "name": "Top Pamplemousse",
+      "category": "Boissons",
+      "description": "Boisson gazeuse au délicieux goût de pamplemousse.",
+      "price": 700,
+      "imageUrl": "/top_pamplemousse.jpg"
+    },
+    {
+      "name": "Eau Tangui 1.5L",
+      "category": "Boissons",
+      "description": "Eau minérale naturelle pour accompagner votre repas.",
+      "price": 1000,
+      "imageUrl": "/tangui.jpg"
+    },
+    {
+      "name": "Jus Joker",
+      "category": "Boissons",
+      "description": "Jus de fruits savoureux disponible en plusieurs parfums.",
+      "price": 1200,
+      "imageUrl": "/joker.jpg"
+    }
+  ]
+}
