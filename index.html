@@ -43,11 +43,11 @@
         </div>
         <!-- ! NAVBAR -->
         <nav
-          class="*:capitalize *:hover:text-brand-orange *:[&.active]:text-brand-orange *:[&.active]:border-b *:py-3 *:px-5 *:rounded-md *:[&.active]:text-center *:[&.active]:font-semibold *:transition-all md:flex px-4 w-fit hidden"
+          class="*:capitalize *:hover:text-brand-orange *:[&.active]:text-brand-orange *:[&.active]:border-b *:py-3 *:px-5 *:[&.active]:text-center *:[&.active]:font-semibold *:transition-all md:flex px-4 w-fit hidden"
         >
           <a href="#hero" class="active">Accueil</a>
           <a href="#menu">Menu</a>
-          <a href="#gallery">Gallerie</a>
+          <a href="#gallery">Galerie</a>
           <a href="#about">à Propos</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -77,11 +77,11 @@
             <i class="fi fi-rr-cross"></i>
           </button>
           <nav
-            class="*:capitalize *:hover:text-brand-orange *:[&.active]:text-brand-orange *:[&.active]:border-b *:py-3 *:px-5 *:w-1/2 *:rounded-md *:[&.active]:text-center *:[&.active]:w-1/3 *:[&.active]:font-semibold *:transition-all flex flex-col py-8 px-4"
+            class="*:capitalize *:hover:text-brand-orange *:[&.active]:text-brand-orange *:[&.active]:border-b *:py-3 *:px-5 *:w-1/2 *:[&.active]:text-center *:[&.active]:w-1/3 *:[&.active]:font-semibold *:transition-all flex flex-col py-8 px-4"
           >
             <a href="#hero" class="active">Accueil</a>
             <a href="#menu">Menu</a>
-            <a href="#gallery">Gallerie</a>
+            <a href="#gallery">Galerie</a>
             <a href="#about">à Propos</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -145,7 +145,6 @@
             >
               <span
                 data-aos="fade-up"
-                data-aos-delay="50"
                 data-aos-duration="0"
                 class="flex flex-col sm:flex-row sm:gap-3 items-center font-bold justify-center"
               >
@@ -176,8 +175,8 @@
             >
               <a
                 data-aos="fade-up"
-                data-aos-delay="400"
-                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-aos-duration="500"
                 href="https://wa.me/678958264?text=Bonjour%20fast%20Food%20Joe's%20!%20Je%20viens%20depuis%20votre%20site%20et%20je%20souhaiterai%20passer%20une%20passer%20une%20commande%20s'il%20vous%20plaît"
                 class="btn-secondary rounded-lg flex w-full"
               >
@@ -186,8 +185,8 @@
               </a>
               <a
                 data-aos="fade-up"
-                data-aos-delay="700"
-                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-aos-duration="500"
                 href="#menu"
                 class="btn-outline rounded-lg flex items-center justify-between gap-2 w-full"
               >
@@ -230,9 +229,6 @@
               </span>
             </span>
             <span
-              data-aos="fade-up"
-              data-aos-delay="700"
-              data-aos-duration="500"
               class="flex items-center justify-start lg:justify-center gap-2 w-full border-none"
             >
               <i class="fi fi-rr-calendar text-brand-yellow text-4xl"></i>
@@ -273,6 +269,7 @@
           </div>
           <div
             data-aos="fade-up"
+            data-aos-once="true"
             class="relative w-full rounded-3xl overflow-clip"
           >
             <img
@@ -301,7 +298,7 @@
             <article
               data-aos="slide-up"
               data-aos-delay="100"
-              data-aos-duration="500"
+              data-aos-duration="700"
               class="card"
             >
               <div class="h-full">
@@ -327,8 +324,8 @@
             </article>
             <article
               data-aos="slide-up"
-              data-aos-delay="200"
-              data-aos-duration="1000"
+              data-aos-delay="150"
+              data-aos-duration="700"
               class="card"
             >
               <div class="h-full">
@@ -350,8 +347,8 @@
             </article>
             <article
               data-aos="slide-up"
-              data-aos-delay="200"
-              data-aos-duration="1000"
+              data-aos-delay="150"
+              data-aos-duration="700"
               class="card"
             >
               <div class="h-full relative">
@@ -377,8 +374,8 @@
             </article>
             <article
               data-aos="slide-up"
-              data-aos-delay="300"
-              data-aos-duration="1000"
+              data-aos-delay="200"
+              data-aos-duration="700"
               class="card"
             >
               <div class="h-full relative">
@@ -417,122 +414,27 @@
           <div class="flex flex-col w-full gap-3">
             <!-- ! BTNs Filter -->
             <div
-            id="btns-filter"
+              id="btns-filter"
               class="flex gap-2 mx-auto sm:flex-nowrap flex-wrap sm:justify-between items-center"
             >
               <button value="Burgers" class="active btn-filter">Burgers</button>
               <button value="Grillades" class="btn-filter">Grillardes</button>
-              <button value="Accompagnements" class="btn-filter">Accompagnements</button>
+              <button value="Accompagnements" class="btn-filter">
+                Accompagnements
+              </button>
               <button value="Boissons" class="btn-filter">Boissons</button>
             </div>
             <!-- ! Menu Card -->
-            <div id="menu-container" class="grid grid-cols-1 md:grid-cols-2 w-full gap-3 py-2">
-              <!-- <div
-                data-aos="fade-up"
-                data-aos-delay="100"
-                data-aos-duration="500"
-                class="menu-card group"
-              >
-                <span class="menu-card-image">
-                  <img
-                    src="./assets/images/products/burger_1.jpg"
-                    alt="Burger"
-                    class="object-cover w-full h-full"
-                  />
-                </span>
-                <div
-                  class="flex flex-col items-start w-full flex-nowrap h-full"
-                >
-                  <span class="menu-card-text">
-                    <h2 class="menu-card-text-title">Cheese Burger</h2>
-                    <p class="menu-card-text-p">
-                      Pain artisanal, steak, fromage, salade, sauce.
-                    </p>
-                  </span>
-                  <h3 class="menu-card-price">3500 FCFA</h3>
-                </div>
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-delay="200"
-                data-aos-duration="500"
-                class="menu-card group"
-              >
-                <span class="menu-card-image">
-                  <img
-                    src="./assets/images/products/burger_2.jpg"
-                    alt="Burger"
-                    class="object-cover w-full h-full"
-                  />
-                </span>
-                <div
-                  class="flex flex-col items-start w-full flex-nowrap h-full"
-                >
-                  <span class="menu-card-text">
-                    <h2 class="menu-card-text-title">Double Burger</h2>
-                    <p class="menu-card-text-p">
-                      Double steak, fromage, salade, sauce.
-                    </p>
-                  </span>
-                  <h3 class="menu-card-price">4500 FCFA</h3>
-                </div>
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="500"
-                class="menu-card group"
-              >
-                <span class="menu-card-image">
-                  <img
-                    src="./assets/images/products/burger_3.jpg"
-                    alt="Burger"
-                    class="object-cover w-full h-full"
-                  />
-                </span>
-                <div
-                  class="flex flex-col items-start w-full flex-nowrap h-full"
-                >
-                  <span class="menu-card-text">
-                    <h2 class="menu-card-text-title">Chiken Burger</h2>
-                    <p class="menu-card-text-p">
-                      Poulet grillé, salade, sauce maison.
-                    </p>
-                  </span>
-                  <h3 class="menu-card-price">3800 FCFA</h3>
-                </div>
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-delay="400"
-                data-aos-duration="500"
-                class="menu-card group"
-              >
-                <span class="menu-card-image">
-                  <img
-                    src="./assets/images/products/burger_3.jpg"
-                    alt="Burger"
-                    class="object-cover w-full h-full"
-                  />
-                </span>
-                <div
-                  class="flex flex-col items-start w-full flex-nowrap h-full"
-                >
-                  <span class="menu-card-text">
-                    <h2 class="menu-card-text-title">Bacon Burger</h2>
-                    <p class="menu-card-text-p">
-                      Steak, bacon, fromage, salade.
-                    </p>
-                  </span>
-                  <h3 class="menu-card-price">4200 FCFA</h3>
-                </div>
-              </div> -->
-            </div>
+            <div
+              id="menu-container"
+              class="grid grid-cols-1 md:grid-cols-2 w-full gap-3 py-2"
+            ></div>
             <!-- ! Special Card -->
             <div
               data-aos="zoom-in"
               data-aos-delay="300"
               data-aos-duration="1000"
+              data-aos-once="true"
               class="special-card"
             >
               <div class="absolute inset-0 z-0">
@@ -584,7 +486,7 @@
           >
             <div class="service-card">
               <span class="service-card-icon">
-                <i class="fi fi-rr-moped"></i>
+                <i class="fi fi-rr-leaf"></i>
               </span>
               <span class="service-card-text">
                 <h1>Produits frais</h1>
@@ -602,7 +504,7 @@
             </div>
             <div class="service-card">
               <span class="service-card-icon">
-                <i class="fi fi-rr-moped"></i>
+                <i class="fi fi-rr-user-headset"></i>
               </span>
               <span class="service-card-text">
                 <h1>Services rapide</h1>
@@ -611,7 +513,7 @@
             </div>
             <div class="service-card last">
               <span class="service-card-icon">
-                <i class="fi fi-rr-moped"></i>
+                <i class="fi fi-rr-heart"></i>
               </span>
               <span class="service-card-text">
                 <h1>Accueil chaleureux</h1>
@@ -627,7 +529,7 @@
         <div class="section-container flex flex-col gap-4">
           <div class="section-header">
             <div class="section-header-separator"></div>
-            <h2 class="section-header-title">Gallerie</h2>
+            <h2 class="section-header-title">Galerie</h2>
             <div class="section-header-separator"></div>
           </div>
           <div class="grid grid-cols-2 lg:grid-cols-4 w-full gap-4">
@@ -671,7 +573,7 @@
             </span>
           </div>
           <button class="btn-primary mx-auto mt-4">
-            Voir toute la gallerie
+            Voir toute la galerie
           </button>
         </div>
       </section>
@@ -881,11 +783,11 @@
           <div class="flex flex-col gap-2 items-start h-full">
             <h2 class="text-xl font-bold uppercase">Lien rapides</h2>
             <nav
-              class="*:capitalize *:hover:text-brand-orange *:[&.active]:text-brand-orange *:[&.active]:border-b *:py-1 *:px-3 md:*:w-full *:w-1/2 *:rounded-md *:[&.active]:font-semibold *:transition-all flex flex-col gap-1 w-full"
+              class="*:capitalize *:hover:text-brand-orange *:[&.active]:text-brand-orange *:[&.active]:border-b *:py-1 *:px-3 md:*:w-full *:w-1/2 *:[&.active]:font-semibold *:transition-all flex flex-col gap-1 w-full"
             >
               <a href="#hero" class="active">Accueil</a>
               <a href="#menu">Menu</a>
-              <a href="#gallery">Gallerie</a>
+              <a href="#gallery">Galerie</a>
               <a href="#about">à Propos</a>
               <a href="#contact">Contact</a>
             </nav>

@@ -50,7 +50,7 @@ function set_products(products: ProductType) {
   menu_container.innerHTML = "";
   products.forEach((product: Product, index: number) => {
     const formattedPrice = new Intl.NumberFormat("fr-FR").format(product.price);
-    const duration = 500 * (index + 1);
+    const duration = 100 * (index + 1);
 
     const delay = 50 * (index + 1);
     menu_container.innerHTML += `
